@@ -7,21 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47CC4A4E6FA01271784F9060 /* Pods_Availly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0978655E5AC3A95DF1C111 /* Pods_Availly.framework */; };
 		FE6EF5151DE619C9009576C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EF5141DE619C9009576C4 /* AppDelegate.swift */; };
-		FE6EF5171DE619C9009576C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EF5161DE619C9009576C4 /* ViewController.swift */; };
-		FE6EF51A1DE619C9009576C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6EF5181DE619C9009576C4 /* Main.storyboard */; };
+		FE6EF5171DE619C9009576C4 /* DJPrimaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EF5161DE619C9009576C4 /* DJPrimaryVC.swift */; };
 		FE6EF51C1DE619C9009576C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE6EF51B1DE619C9009576C4 /* Assets.xcassets */; };
-		FE6EF51F1DE619C9009576C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6EF51D1DE619C9009576C4 /* LaunchScreen.storyboard */; };
+		FE6EF52C1DE61B2B009576C4 /* DJViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EF52B1DE61B2B009576C4 /* DJViewController.swift */; };
+		FE6EF52F1DE61B51009576C4 /* DJProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EF52D1DE61B51009576C4 /* DJProfileVC.swift */; };
+		FE6EF5301DE61B51009576C4 /* DJProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE6EF52E1DE61B51009576C4 /* DJProfileVC.xib */; };
+		FE6EF5351DE61C50009576C4 /* DJCreateEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EF5331DE61C50009576C4 /* DJCreateEventVC.swift */; };
+		FE6EF5361DE61C50009576C4 /* DJCreateEventVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE6EF5341DE61C50009576C4 /* DJCreateEventVC.xib */; };
+		FE6EF53A1DE61C6B009576C4 /* DJSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EF5381DE61C6B009576C4 /* DJSettingsVC.swift */; };
+		FE6EF53B1DE61C6B009576C4 /* DJSettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE6EF5391DE61C6B009576C4 /* DJSettingsVC.xib */; };
+		FE6EF53E1DE61D7A009576C4 /* DJPrimaryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE6EF53D1DE61D7A009576C4 /* DJPrimaryVC.xib */; };
+		FE6EF5491DE61F90009576C4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6EF5411DE61F90009576C4 /* Alamofire.framework */; };
+		FE6EF54A1DE61F90009576C4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6EF5421DE61F90009576C4 /* Bolts.framework */; };
+		FE6EF54B1DE61F90009576C4 /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6EF5431DE61F90009576C4 /* FacebookCore.framework */; };
+		FE6EF54C1DE61F90009576C4 /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6EF5441DE61F90009576C4 /* FacebookLogin.framework */; };
+		FE6EF54D1DE61F90009576C4 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6EF5451DE61F90009576C4 /* FBSDKCoreKit.framework */; };
+		FE6EF54E1DE61F90009576C4 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6EF5461DE61F90009576C4 /* FBSDKLoginKit.framework */; };
+		FE6EF54F1DE61F90009576C4 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6EF5471DE61F90009576C4 /* Kingfisher.framework */; };
+		FE6EF5501DE61F90009576C4 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6EF5481DE61F90009576C4 /* SwiftyJSON.framework */; };
+		FE6EF5521DE623F9009576C4 /* DJTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EF5511DE623F9009576C4 /* DJTabBarController.swift */; };
+		FE6EF5551DE6247E009576C4 /* DJLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EF5531DE6247E009576C4 /* DJLoginVC.swift */; };
+		FE6EF5561DE6247E009576C4 /* DJLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE6EF5541DE6247E009576C4 /* DJLoginVC.xib */; };
+		FE6EF5591DE62622009576C4 /* DJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EF5581DE62622009576C4 /* DJNavigationController.swift */; };
+		FE6EF5741DE632F0009576C4 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EF5731DE632F0009576C4 /* Enums.swift */; };
+		FE6EF5771DE63303009576C4 /* UIColor+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EF5761DE63303009576C4 /* UIColor+Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FE6EF5111DE619C9009576C4 /* Availly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Availly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E0978655E5AC3A95DF1C111 /* Pods_Availly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Availly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		333F032581BEB37AC22D3077 /* Pods-Availly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Availly.release.xcconfig"; path = "Pods/Target Support Files/Pods-Availly/Pods-Availly.release.xcconfig"; sourceTree = "<group>"; };
+		7130C3F48CF0AE48DCE51AF9 /* Pods-Availly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Availly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Availly/Pods-Availly.debug.xcconfig"; sourceTree = "<group>"; };
+		FE6EF5111DE619C9009576C4 /* Availly-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Availly-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6EF5141DE619C9009576C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FE6EF5161DE619C9009576C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FE6EF5191DE619C9009576C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE6EF5161DE619C9009576C4 /* DJPrimaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJPrimaryVC.swift; sourceTree = "<group>"; };
 		FE6EF51B1DE619C9009576C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FE6EF51E1DE619C9009576C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE6EF5201DE619C9009576C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE6EF52B1DE61B2B009576C4 /* DJViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DJViewController.swift; sourceTree = "<group>"; };
+		FE6EF52D1DE61B51009576C4 /* DJProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DJProfileVC.swift; sourceTree = "<group>"; };
+		FE6EF52E1DE61B51009576C4 /* DJProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DJProfileVC.xib; sourceTree = "<group>"; };
+		FE6EF5331DE61C50009576C4 /* DJCreateEventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DJCreateEventVC.swift; sourceTree = "<group>"; };
+		FE6EF5341DE61C50009576C4 /* DJCreateEventVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DJCreateEventVC.xib; sourceTree = "<group>"; };
+		FE6EF5381DE61C6B009576C4 /* DJSettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DJSettingsVC.swift; sourceTree = "<group>"; };
+		FE6EF5391DE61C6B009576C4 /* DJSettingsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DJSettingsVC.xib; sourceTree = "<group>"; };
+		FE6EF53D1DE61D7A009576C4 /* DJPrimaryVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DJPrimaryVC.xib; sourceTree = "<group>"; };
+		FE6EF5411DE61F90009576C4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Availly-gcrtqaqvsolssgdftnejpphydzgq/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		FE6EF5421DE61F90009576C4 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "Pods/../build/Debug-iphoneos/Bolts/Bolts.framework"; sourceTree = "<group>"; };
+		FE6EF5431DE61F90009576C4 /* FacebookCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookCore.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Availly-gcrtqaqvsolssgdftnejpphydzgq/Build/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework"; sourceTree = "<group>"; };
+		FE6EF5441DE61F90009576C4 /* FacebookLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookLogin.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Availly-gcrtqaqvsolssgdftnejpphydzgq/Build/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework"; sourceTree = "<group>"; };
+		FE6EF5451DE61F90009576C4 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "Pods/../build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		FE6EF5461DE61F90009576C4 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "Pods/../build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		FE6EF5471DE61F90009576C4 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Availly-gcrtqaqvsolssgdftnejpphydzgq/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework"; sourceTree = "<group>"; };
+		FE6EF5481DE61F90009576C4 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Availly-gcrtqaqvsolssgdftnejpphydzgq/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		FE6EF5511DE623F9009576C4 /* DJTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DJTabBarController.swift; sourceTree = "<group>"; };
+		FE6EF5531DE6247E009576C4 /* DJLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DJLoginVC.swift; sourceTree = "<group>"; };
+		FE6EF5541DE6247E009576C4 /* DJLoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DJLoginVC.xib; sourceTree = "<group>"; };
+		FE6EF5581DE62622009576C4 /* DJNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DJNavigationController.swift; sourceTree = "<group>"; };
+		FE6EF5731DE632F0009576C4 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		FE6EF5761DE63303009576C4 /* UIColor+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Convenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,24 +73,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE6EF5491DE61F90009576C4 /* Alamofire.framework in Frameworks */,
+				FE6EF54A1DE61F90009576C4 /* Bolts.framework in Frameworks */,
+				FE6EF54B1DE61F90009576C4 /* FacebookCore.framework in Frameworks */,
+				FE6EF54C1DE61F90009576C4 /* FacebookLogin.framework in Frameworks */,
+				FE6EF54D1DE61F90009576C4 /* FBSDKCoreKit.framework in Frameworks */,
+				FE6EF54E1DE61F90009576C4 /* FBSDKLoginKit.framework in Frameworks */,
+				FE6EF54F1DE61F90009576C4 /* Kingfisher.framework in Frameworks */,
+				FE6EF5501DE61F90009576C4 /* SwiftyJSON.framework in Frameworks */,
+				47CC4A4E6FA01271784F9060 /* Pods_Availly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30D6F5FE08AF513AA4C38310 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE6EF5411DE61F90009576C4 /* Alamofire.framework */,
+				FE6EF5421DE61F90009576C4 /* Bolts.framework */,
+				FE6EF5431DE61F90009576C4 /* FacebookCore.framework */,
+				FE6EF5441DE61F90009576C4 /* FacebookLogin.framework */,
+				FE6EF5451DE61F90009576C4 /* FBSDKCoreKit.framework */,
+				FE6EF5461DE61F90009576C4 /* FBSDKLoginKit.framework */,
+				FE6EF5471DE61F90009576C4 /* Kingfisher.framework */,
+				FE6EF5481DE61F90009576C4 /* SwiftyJSON.framework */,
+				0E0978655E5AC3A95DF1C111 /* Pods_Availly.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5102FD2C309F64761B8AB396 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7130C3F48CF0AE48DCE51AF9 /* Pods-Availly.debug.xcconfig */,
+				333F032581BEB37AC22D3077 /* Pods-Availly.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FE6EF5081DE619C9009576C4 = {
 			isa = PBXGroup;
 			children = (
 				FE6EF5131DE619C9009576C4 /* Availly */,
 				FE6EF5121DE619C9009576C4 /* Products */,
+				5102FD2C309F64761B8AB396 /* Pods */,
+				30D6F5FE08AF513AA4C38310 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		FE6EF5121DE619C9009576C4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FE6EF5111DE619C9009576C4 /* Availly.app */,
+				FE6EF5111DE619C9009576C4 /* Availly-dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,34 +134,129 @@
 		FE6EF5131DE619C9009576C4 /* Availly */ = {
 			isa = PBXGroup;
 			children = (
-				FE6EF5141DE619C9009576C4 /* AppDelegate.swift */,
-				FE6EF5161DE619C9009576C4 /* ViewController.swift */,
-				FE6EF5181DE619C9009576C4 /* Main.storyboard */,
-				FE6EF51B1DE619C9009576C4 /* Assets.xcassets */,
-				FE6EF51D1DE619C9009576C4 /* LaunchScreen.storyboard */,
-				FE6EF5201DE619C9009576C4 /* Info.plist */,
+				FE6EF5701DE6304F009576C4 /* Extensions */,
+				FE6EF5291DE61A0E009576C4 /* Models */,
+				FE6EF52A1DE61A13009576C4 /* Supporting Files */,
+				FE6EF5261DE619EF009576C4 /* View Controllers */,
+				FE6EF5271DE619F5009576C4 /* Views */,
 			);
 			path = Availly;
+			sourceTree = "<group>";
+		};
+		FE6EF5261DE619EF009576C4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FE6EF5321DE61B5C009576C4 /* Primary */,
+				FE6EF5311DE61B57009576C4 /* Profile */,
+				FE6EF5371DE61C55009576C4 /* Create */,
+				FE6EF53C1DE61C6F009576C4 /* Settings */,
+				FE6EF5571DE62482009576C4 /* Login */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FE6EF5271DE619F5009576C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FE6EF5291DE61A0E009576C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FE6EF52B1DE61B2B009576C4 /* DJViewController.swift */,
+				FE6EF5511DE623F9009576C4 /* DJTabBarController.swift */,
+				FE6EF5581DE62622009576C4 /* DJNavigationController.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FE6EF52A1DE61A13009576C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE6EF51B1DE619C9009576C4 /* Assets.xcassets */,
+				FE6EF5201DE619C9009576C4 /* Info.plist */,
+				FE6EF5141DE619C9009576C4 /* AppDelegate.swift */,
+				FE6EF5731DE632F0009576C4 /* Enums.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE6EF5311DE61B57009576C4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FE6EF52D1DE61B51009576C4 /* DJProfileVC.swift */,
+				FE6EF52E1DE61B51009576C4 /* DJProfileVC.xib */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		FE6EF5321DE61B5C009576C4 /* Primary */ = {
+			isa = PBXGroup;
+			children = (
+				FE6EF5161DE619C9009576C4 /* DJPrimaryVC.swift */,
+				FE6EF53D1DE61D7A009576C4 /* DJPrimaryVC.xib */,
+			);
+			name = Primary;
+			sourceTree = "<group>";
+		};
+		FE6EF5371DE61C55009576C4 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				FE6EF5331DE61C50009576C4 /* DJCreateEventVC.swift */,
+				FE6EF5341DE61C50009576C4 /* DJCreateEventVC.xib */,
+			);
+			name = Create;
+			sourceTree = "<group>";
+		};
+		FE6EF53C1DE61C6F009576C4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FE6EF5381DE61C6B009576C4 /* DJSettingsVC.swift */,
+				FE6EF5391DE61C6B009576C4 /* DJSettingsVC.xib */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		FE6EF5571DE62482009576C4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FE6EF5531DE6247E009576C4 /* DJLoginVC.swift */,
+				FE6EF5541DE6247E009576C4 /* DJLoginVC.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		FE6EF5701DE6304F009576C4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FE6EF5761DE63303009576C4 /* UIColor+Convenience.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FE6EF5101DE619C9009576C4 /* Availly */ = {
+		FE6EF5101DE619C9009576C4 /* Availly-dev */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FE6EF5231DE619C9009576C4 /* Build configuration list for PBXNativeTarget "Availly" */;
+			buildConfigurationList = FE6EF5231DE619C9009576C4 /* Build configuration list for PBXNativeTarget "Availly-dev" */;
 			buildPhases = (
+				82837EFEF7E3F8ADDCAB2C8A /* [CP] Check Pods Manifest.lock */,
 				FE6EF50D1DE619C9009576C4 /* Sources */,
 				FE6EF50E1DE619C9009576C4 /* Frameworks */,
 				FE6EF50F1DE619C9009576C4 /* Resources */,
+				F177EFFB9726DC60946B330D /* [CP] Embed Pods Frameworks */,
+				CA1C5322EC01E2AD97DDC715 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Availly;
+			name = "Availly-dev";
 			productName = Availly;
-			productReference = FE6EF5111DE619C9009576C4 /* Availly.app */;
+			productReference = FE6EF5111DE619C9009576C4 /* Availly-dev.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +289,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FE6EF5101DE619C9009576C4 /* Availly */,
+				FE6EF5101DE619C9009576C4 /* Availly-dev */,
 			);
 		};
 /* End PBXProject section */
@@ -124,44 +299,85 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE6EF51F1DE619C9009576C4 /* LaunchScreen.storyboard in Resources */,
+				FE6EF5301DE61B51009576C4 /* DJProfileVC.xib in Resources */,
+				FE6EF5361DE61C50009576C4 /* DJCreateEventVC.xib in Resources */,
 				FE6EF51C1DE619C9009576C4 /* Assets.xcassets in Resources */,
-				FE6EF51A1DE619C9009576C4 /* Main.storyboard in Resources */,
+				FE6EF53E1DE61D7A009576C4 /* DJPrimaryVC.xib in Resources */,
+				FE6EF53B1DE61C6B009576C4 /* DJSettingsVC.xib in Resources */,
+				FE6EF5561DE6247E009576C4 /* DJLoginVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82837EFEF7E3F8ADDCAB2C8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CA1C5322EC01E2AD97DDC715 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Availly/Pods-Availly-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F177EFFB9726DC60946B330D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Availly/Pods-Availly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FE6EF50D1DE619C9009576C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE6EF5171DE619C9009576C4 /* ViewController.swift in Sources */,
+				FE6EF52F1DE61B51009576C4 /* DJProfileVC.swift in Sources */,
+				FE6EF5521DE623F9009576C4 /* DJTabBarController.swift in Sources */,
+				FE6EF53A1DE61C6B009576C4 /* DJSettingsVC.swift in Sources */,
+				FE6EF52C1DE61B2B009576C4 /* DJViewController.swift in Sources */,
+				FE6EF5771DE63303009576C4 /* UIColor+Convenience.swift in Sources */,
+				FE6EF5351DE61C50009576C4 /* DJCreateEventVC.swift in Sources */,
+				FE6EF5171DE619C9009576C4 /* DJPrimaryVC.swift in Sources */,
 				FE6EF5151DE619C9009576C4 /* AppDelegate.swift in Sources */,
+				FE6EF5591DE62622009576C4 /* DJNavigationController.swift in Sources */,
+				FE6EF5741DE632F0009576C4 /* Enums.swift in Sources */,
+				FE6EF5551DE6247E009576C4 /* DJLoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		FE6EF5181DE619C9009576C4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FE6EF5191DE619C9009576C4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FE6EF51D1DE619C9009576C4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FE6EF51E1DE619C9009576C4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FE6EF5211DE619C9009576C4 /* Debug */ = {
@@ -257,12 +473,19 @@
 		};
 		FE6EF5241DE619C9009576C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7130C3F48CF0AE48DCE51AF9 /* Pods-Availly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4XGWNN4LS9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Bolts",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKCoreKit",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKLoginKit",
+				);
 				INFOPLIST_FILE = Availly/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.DesignerJeans.Availly;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DesignerJeans.Availly.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -270,12 +493,19 @@
 		};
 		FE6EF5251DE619C9009576C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 333F032581BEB37AC22D3077 /* Pods-Availly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4XGWNN4LS9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Bolts",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKCoreKit",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKLoginKit",
+				);
 				INFOPLIST_FILE = Availly/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.DesignerJeans.Availly;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DesignerJeans.Availly.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -293,13 +523,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FE6EF5231DE619C9009576C4 /* Build configuration list for PBXNativeTarget "Availly" */ = {
+		FE6EF5231DE619C9009576C4 /* Build configuration list for PBXNativeTarget "Availly-dev" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FE6EF5241DE619C9009576C4 /* Debug */,
 				FE6EF5251DE619C9009576C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
