@@ -19,7 +19,7 @@
             <view key="view" contentMode="scaleToFill" id="kq7-aB-ljs">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <color key="backgroundColor" red="0.094117647058823528" green="0.11372549019607843" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
             </view>
             <point key="canvasLocation" x="13" y="30"/>
         </viewController>

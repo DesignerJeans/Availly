@@ -27,8 +27,8 @@ class DJTabBarController: UITabBarController {
 		for (z, nibName) in nibNames.enumerated() {
 			let nibContents = Bundle.main.loadNibNamed(nibName, owner: nil, options: nil)
 			if let vc = nibContents?.first as? DJViewController {
-				print("another successful DJVC")
 				let navC = DJNavigationController(rootViewController: vc)
+				
 				navC.tabBarItem.image = tabImgs[z]
 				viewControllers.append(navC)
 			}
