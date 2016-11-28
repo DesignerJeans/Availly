@@ -16,12 +16,68 @@
                 <viewControllerLayoutGuide type="top" id="qSa-S8-lYI"/>
                 <viewControllerLayoutGuide type="bottom" id="EOk-x9-Fbo"/>
             </layoutGuides>
-            <view key="view" contentMode="scaleToFill" id="yFZ-Ch-koq">
+            <view key="view" contentMode="scaleToFill" id="yFZ-Ch-koq" userLabel="overarch">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdj-ao-TbR">
+                        <rect key="frame" x="0.0" y="28" width="375" height="576"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="9yD-hN-uZB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" placeholder="YES" id="iHi-HV-0NP"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fPz-iY-a4C">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C26-6F-iH1">
+                                <rect key="frame" x="199" y="534" width="160" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="Z0R-E0-RLb"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="pull to go  AVAILLY">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="Heavitas"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16862745100000001" green="0.1764705882" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="C26-6F-iH1" secondAttribute="bottom" constant="8" id="IKq-Mo-zCn"/>
+                            <constraint firstAttribute="height" constant="576" placeholder="YES" id="Uhm-HP-nMc"/>
+                            <constraint firstAttribute="trailing" secondItem="C26-6F-iH1" secondAttribute="trailing" constant="16" id="YDR-sU-rv3"/>
+                            <constraint firstItem="9yD-hN-uZB" firstAttribute="top" secondItem="bdj-ao-TbR" secondAttribute="top" placeholder="YES" id="bdV-KT-5wF"/>
+                            <constraint firstItem="9yD-hN-uZB" firstAttribute="width" secondItem="bdj-ao-TbR" secondAttribute="width" placeholder="YES" id="jTa-ws-L9W"/>
+                            <constraint firstItem="9yD-hN-uZB" firstAttribute="centerX" secondItem="bdj-ao-TbR" secondAttribute="centerX" placeholder="YES" id="wbH-Rh-xgU"/>
+                        </constraints>
+                    </view>
+                </subviews>
                 <color key="backgroundColor" red="0.094117647058823528" green="0.11372549019607843" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="bdj-ao-TbR" firstAttribute="centerX" secondItem="yFZ-Ch-koq" secondAttribute="centerX" placeholder="YES" id="RJo-Kz-Kab"/>
+                    <constraint firstItem="bdj-ao-TbR" firstAttribute="width" secondItem="yFZ-Ch-koq" secondAttribute="width" placeholder="YES" id="RNg-PK-oL0"/>
+                    <constraint firstItem="bdj-ao-TbR" firstAttribute="top" secondItem="qSa-S8-lYI" secondAttribute="bottom" constant="8" placeholder="YES" id="Xeh-Hp-cQo"/>
+                    <constraint firstItem="bdj-ao-TbR" firstAttribute="centerX" secondItem="yFZ-Ch-koq" secondAttribute="centerX" placeholder="YES" id="ZpD-cL-mtg"/>
+                </constraints>
             </view>
-            <point key="canvasLocation" x="-149" y="-26"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <connections>
+                <outlet property="AVBFriendsCollectionView" destination="9yD-hN-uZB" id="qFe-pn-UAj"/>
+                <outlet property="pullToGoLabel" destination="C26-6F-iH1" id="L7v-DS-QwS"/>
+                <outlet property="toggleableContainerView" destination="bdj-ao-TbR" id="myQ-mp-lKB"/>
+            </connections>
+            <point key="canvasLocation" x="-149.5" y="-26.5"/>
         </viewController>
     </objects>
 </document>

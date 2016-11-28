@@ -11,7 +11,7 @@ import UIKit
 class DJTabBarController: UITabBarController {
 	
 	func configureTabs() {
-		print("configuring tabs")
+		
 		let nibNames = [
 			"DJPrimaryVC",
 			"DJProfileVC",

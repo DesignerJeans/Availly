@@ -8,3 +8,7 @@
 
 import Foundation
 import UIKit 
+
+enum AvaillyStatus: String {
+	case availlyble, unavaillyble
+}
