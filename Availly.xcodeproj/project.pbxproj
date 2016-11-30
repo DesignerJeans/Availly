@@ -38,6 +38,7 @@
 		FE6EF5771DE63303009576C4 /* UIColor+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EF5761DE63303009576C4 /* UIColor+Convenience.swift */; };
 		FE6EF5791DE7AFF9009576C4 /* UIColor+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EF5781DE7AFF9009576C4 /* UIColor+Design.swift */; };
 		FE6EF57B1DE7B207009576C4 /* ToggleAVBControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EF57A1DE7B207009576C4 /* ToggleAVBControl.swift */; };
+		FEC9D3F51DEE8DF500DE97DC /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC9D3F41DEE8DF500DE97DC /* Protocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		FE6EF5761DE63303009576C4 /* UIColor+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Convenience.swift"; sourceTree = "<group>"; };
 		FE6EF5781DE7AFF9009576C4 /* UIColor+Design.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Design.swift"; sourceTree = "<group>"; };
 		FE6EF57A1DE7B207009576C4 /* ToggleAVBControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleAVBControl.swift; sourceTree = "<group>"; };
+		FEC9D3F41DEE8DF500DE97DC /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 				FE6EF5201DE619C9009576C4 /* Info.plist */,
 				FE6EF5141DE619C9009576C4 /* AppDelegate.swift */,
 				FE6EF5731DE632F0009576C4 /* Enums.swift */,
+				FEC9D3F41DEE8DF500DE97DC /* Protocols.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				FE6EF5741DE632F0009576C4 /* Enums.swift in Sources */,
 				FE6EF57B1DE7B207009576C4 /* ToggleAVBControl.swift in Sources */,
 				FE6EF5551DE6247E009576C4 /* DJLoginVC.swift in Sources */,
+				FEC9D3F51DEE8DF500DE97DC /* Protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

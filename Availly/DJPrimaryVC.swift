@@ -12,24 +12,28 @@ class DJPrimaryVC: DJViewController {
 	// MARK: - outlets
 	@IBOutlet weak var toggleableContainerView: UIView!
 	@IBOutlet weak var AVBFriendsCollectionView: UICollectionView!
-	@IBOutlet weak var pullToGoLabel: UILabel!
-	
-	
-	
+
 	// MARK: - properties
 	var containerViewBottomConstraint: NSLayoutConstraint?
 	var containerViewHeightConstraint: NSLayoutConstraint?
 	var collectionViewTopConstraint: NSLayoutConstraint?
-	let avbStatusIndicatorHeight: CGFloat = 32
 	
+	
+	// MARK: - ReactsToAVBChange methods
+	override func handleAVBChanged() {
+		print("received notification at correct level")
+		super.handleAVBChanged()
+	}
+//	func didReceiveNewAVB(withType type: AvaillyStatus) {
+//		print("main VC noticed the change!")
+//		setContainerViewPosition(toReflect: type)
+//	}
 	
 	// MARK: - custom methods
 	func setContainerViewPosition(toReflect availlybility: AvaillyStatus) {
 		let navBarHeight = navigationController?.navigationBar.frame.height ?? 44
 		let tabBarHeight = tabBarController?.tabBar.frame.height ?? 49
 		var color = toggleableContainerView.backgroundColor
-		print(navBarHeight)
-		print(tabBarHeight)
 		
 		switch availlybility {
 		case .availlyble: // up
@@ -52,42 +56,37 @@ class DJPrimaryVC: DJViewController {
 				self.view.layoutIfNeeded()
 				
 		},
-			completion: {done in
-					DJSessionManager.currentAvaillybility = availlybility
-					if let avbStat = DJSessionManager.currentAvaillybility {
-						let pushPull = avbStat.rawValue == AvaillyStatus.availlyble.rawValue ?  "pull" : "push"
-						let oppositeAVBStat = [AvaillyStatus.availlyble, AvaillyStatus.unavaillyble].filter({$0 != avbStat}).first!.rawValue
-						self.pullToGoLabel.text = "\(pushPull) to go \(oppositeAVBStat)"
-					}
-				
-		})
+			completion: nil)
 	}
 	
 	func toggleContainerViewPosition() {
-		if let currentAVB = DJSessionManager.currentAvaillybility {
-			let avbTypes: [AvaillyStatus] = [.availlyble, .unavaillyble].filter({$0 != currentAVB})
-			setContainerViewPosition(toReflect: avbTypes.first!)
-		}
+		
+		
+		
+		
+//		if let currentAVB = DJSessionManager.currentAvaillybility {
+//			let avbTypes: [AvaillyStatus] = [.availlyble, .unavaillyble].filter({$0 != currentAVB})
+//			setContainerViewPosition(toReflect: avbTypes.first!)
+//		}
 	}
 	
 	
 	// MARK: - init methods
 	func spawnGestures() {
-		
-		let dummyToggleTapGesture = UITapGestureRecognizer(target: self, action: #selector(toggleContainerViewPosition))
-		view.addGestureRecognizer(dummyToggleTapGesture)
+		view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(toggleContainerViewPosition)))
 	}
+	
 	override func viewDidLayoutSubviews() {
 		if let navBarHeight = navigationController?.navigationBar.frame.height, let tabBarHeight = tabBarController?.tabBar.frame.height {
-			containerViewHeightConstraint?.constant = view.frame.height //- navBarHeight
+			containerViewHeightConstraint?.constant = view.frame.height - navBarHeight
 		}
 	}
 	
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
-//		DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//			self.setContainerViewPosition(toReflect: .availlyble)
-//		}
+		DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+			NotificationCenter.default.post(Notification(name: DJNotification.AVBChanged.asNotificationName()))
+		}
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
@@ -98,6 +97,7 @@ class DJPrimaryVC: DJViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		AVBFriendsCollectionView.alpha = 0
 		addContainerViewConstraints()
 		spawnGestures()
 	}

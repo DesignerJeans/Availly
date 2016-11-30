@@ -51,41 +51,41 @@ extension DJPrimaryVC {
 		
 		
 		// collection view
-		AVBFriendsCollectionView.translatesAutoresizingMaskIntoConstraints = false
-		toggleableContainerView.addConstraint(NSLayoutConstraint(
-			item: AVBFriendsCollectionView,
-			attribute: .width,
-			relatedBy: .equal,
-			toItem: toggleableContainerView,
-			attribute: .width,
-			multiplier: 1,
-			constant: 0))
-		toggleableContainerView.addConstraint(NSLayoutConstraint(
-			item: AVBFriendsCollectionView,
-			attribute: .height,
-			relatedBy: .equal,
-			toItem: nil,
-			attribute: .notAnAttribute,
-			multiplier: 1,
-			constant: 60))
-		toggleableContainerView.addConstraint(NSLayoutConstraint(
-			item: AVBFriendsCollectionView,
-			attribute: .centerX,
-			relatedBy: .equal,
-			toItem: toggleableContainerView,
-			attribute: .centerX,
-			multiplier: 1,
-			constant: 0))
-		collectionViewTopConstraint = NSLayoutConstraint(
-			item: AVBFriendsCollectionView,
-			attribute: .top,
-			relatedBy: .equal,
-			toItem: toggleableContainerView,
-			attribute: .top,
-			multiplier: 1,
-			constant: 44)
-		toggleableContainerView.addConstraint(collectionViewTopConstraint!)
-		
+//		AVBFriendsCollectionView.translatesAutoresizingMaskIntoConstraints = false
+//		toggleableContainerView.addConstraint(NSLayoutConstraint(
+//			item: AVBFriendsCollectionView,
+//			attribute: .width,
+//			relatedBy: .equal,
+//			toItem: toggleableContainerView,
+//			attribute: .width,
+//			multiplier: 1,
+//			constant: 0))
+//		toggleableContainerView.addConstraint(NSLayoutConstraint(
+//			item: AVBFriendsCollectionView,
+//			attribute: .height,
+//			relatedBy: .equal,
+//			toItem: nil,
+//			attribute: .notAnAttribute,
+//			multiplier: 1,
+//			constant: 60))
+//		toggleableContainerView.addConstraint(NSLayoutConstraint(
+//			item: AVBFriendsCollectionView,
+//			attribute: .centerX,
+//			relatedBy: .equal,
+//			toItem: toggleableContainerView,
+//			attribute: .centerX,
+//			multiplier: 1,
+//			constant: 0))
+//		collectionViewTopConstraint = NSLayoutConstraint(
+//			item: AVBFriendsCollectionView,
+//			attribute: .top,
+//			relatedBy: .equal,
+//			toItem: toggleableContainerView,
+//			attribute: .top,
+//			multiplier: 1,
+//			constant: 44)
+//		toggleableContainerView.addConstraint(collectionViewTopConstraint!)
+//		
 	}
 	
 }

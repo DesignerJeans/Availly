@@ -12,6 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
+	var sessionManager: DJSessionManager?
 	
 	func loadLoginVC() {
 		//
@@ -25,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		
 		// TODO: auth code
-		
+		sessionManager = DJSessionManager()
 		let window = UIWindow(frame: UIScreen.main.bounds)
 		self.window = window
 		loadRootTabBar()

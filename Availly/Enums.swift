@@ -12,3 +12,11 @@ import UIKit
 enum AvaillyStatus: String {
 	case availlyble, unavaillyble
 }
+
+
+enum DJNotification: String {
+	case AVBChanged
+	func asNotificationName() -> Notification.Name {
+		return Notification.Name(self.rawValue)
+	}
+}
