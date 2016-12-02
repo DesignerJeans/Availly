@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
 	var sessionManager: DJSessionManager?
+	var networkManager: DJNetworkManager?
 	
 	func loadLoginVC() {
 		//
@@ -27,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		// TODO: auth code
 		sessionManager = DJSessionManager()
+		networkManager = DJNetworkManager()
 		let window = UIWindow(frame: UIScreen.main.bounds)
 		self.window = window
 		loadRootTabBar()

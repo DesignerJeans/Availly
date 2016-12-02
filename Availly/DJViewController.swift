@@ -8,18 +8,21 @@
 
 import UIKit
 
-class DJViewController: UIViewController {
+class DJViewController: UIViewController, ReactsToAVBChange {
 	
-	func handleAVBChanged() {
-		print("top level got called?")
+	func didReceiveNewAVB(sender: Notification) {
+		print("vc received notification")
 		// go through list of ReactsToAVBChange objects
+		if let currentAVB = sender.object as? AvaillyStatus {
+			print(currentAVB.rawValue)
+		}
 	}
 	
 	required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 		NotificationCenter.default.addObserver(
 			self,
-			selector: #selector(handleAVBChanged),
+			selector: #selector(didReceiveNewAVB(sender:)),
 			name: DJNotification.AVBChanged.asNotificationName(),
 			object: nil)
 	}

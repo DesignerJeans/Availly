@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ReactsToAVBChange {
-	func didReceiveNewAVB(withType type: AvaillyStatus)
+	func didReceiveNewAVB(sender: Notification)
 }

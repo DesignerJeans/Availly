@@ -19,11 +19,8 @@ class DJPrimaryVC: DJViewController {
 	var collectionViewTopConstraint: NSLayoutConstraint?
 	
 	
-	// MARK: - ReactsToAVBChange methods
-	override func handleAVBChanged() {
-		print("received notification at correct level")
-		super.handleAVBChanged()
-	}
+
+	
 //	func didReceiveNewAVB(withType type: AvaillyStatus) {
 //		print("main VC noticed the change!")
 //		setContainerViewPosition(toReflect: type)
@@ -69,29 +66,27 @@ class DJPrimaryVC: DJViewController {
 //			setContainerViewPosition(toReflect: avbTypes.first!)
 //		}
 	}
-	
-	
-	// MARK: - init methods
-	func spawnGestures() {
-		view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(toggleContainerViewPosition)))
-	}
-	
+
 	override func viewDidLayoutSubviews() {
-		if let navBarHeight = navigationController?.navigationBar.frame.height, let tabBarHeight = tabBarController?.tabBar.frame.height {
+		super.viewDidLayoutSubviews()
+		if let navBarHeight = navigationController?.navigationBar.frame.height {
 			containerViewHeightConstraint?.constant = view.frame.height - navBarHeight
 		}
 	}
 	
+	// MARK: - init methods
+	
+	
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
-		DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+		wait(for: 1) {
+			
 			NotificationCenter.default.post(Notification(name: DJNotification.AVBChanged.asNotificationName()))
 		}
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		view.layoutIfNeeded()
 	}
 	
 	
@@ -99,7 +94,7 @@ class DJPrimaryVC: DJViewController {
 		super.viewDidLoad()
 		AVBFriendsCollectionView.alpha = 0
 		addContainerViewConstraints()
-		spawnGestures()
+		view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(toggleContainerViewPosition)))
 	}
 
 	override func didReceiveMemoryWarning() {

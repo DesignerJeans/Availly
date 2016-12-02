@@ -38,6 +38,9 @@
 		FE6EF5771DE63303009576C4 /* UIColor+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EF5761DE63303009576C4 /* UIColor+Convenience.swift */; };
 		FE6EF5791DE7AFF9009576C4 /* UIColor+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EF5781DE7AFF9009576C4 /* UIColor+Design.swift */; };
 		FE6EF57B1DE7B207009576C4 /* ToggleAVBControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EF57A1DE7B207009576C4 /* ToggleAVBControl.swift */; };
+		FE74657D1DF1F38000415EF7 /* Dispatch+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE74657C1DF1F38000415EF7 /* Dispatch+Convenience.swift */; };
+		FE74657F1DF1F92A00415EF7 /* DJNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE74657E1DF1F92A00415EF7 /* DJNetworkManager.swift */; };
+		FE7465811DF20CA800415EF7 /* Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7465801DF20CA800415EF7 /* Convenience.swift */; };
 		FEC9D3F51DEE8DF500DE97DC /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC9D3F41DEE8DF500DE97DC /* Protocols.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +80,9 @@
 		FE6EF5761DE63303009576C4 /* UIColor+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Convenience.swift"; sourceTree = "<group>"; };
 		FE6EF5781DE7AFF9009576C4 /* UIColor+Design.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Design.swift"; sourceTree = "<group>"; };
 		FE6EF57A1DE7B207009576C4 /* ToggleAVBControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleAVBControl.swift; sourceTree = "<group>"; };
+		FE74657C1DF1F38000415EF7 /* Dispatch+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dispatch+Convenience.swift"; sourceTree = "<group>"; };
+		FE74657E1DF1F92A00415EF7 /* DJNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DJNetworkManager.swift; sourceTree = "<group>"; };
+		FE7465801DF20CA800415EF7 /* Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Convenience.swift; sourceTree = "<group>"; };
 		FEC9D3F41DEE8DF500DE97DC /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				FE5CFDE41DE9183200503915 /* DJSessionManager.swift */,
+				FE74657E1DF1F92A00415EF7 /* DJNetworkManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -266,6 +273,8 @@
 			children = (
 				FE6EF5761DE63303009576C4 /* UIColor+Convenience.swift */,
 				FE6EF5781DE7AFF9009576C4 /* UIColor+Design.swift */,
+				FE74657C1DF1F38000415EF7 /* Dispatch+Convenience.swift */,
+				FE7465801DF20CA800415EF7 /* Convenience.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -404,6 +413,8 @@
 				FE6EF5521DE623F9009576C4 /* DJTabBarController.swift in Sources */,
 				FE6EF53A1DE61C6B009576C4 /* DJSettingsVC.swift in Sources */,
 				FE6EF52C1DE61B2B009576C4 /* DJViewController.swift in Sources */,
+				FE74657F1DF1F92A00415EF7 /* DJNetworkManager.swift in Sources */,
+				FE7465811DF20CA800415EF7 /* Convenience.swift in Sources */,
 				FE6EF5771DE63303009576C4 /* UIColor+Convenience.swift in Sources */,
 				FE6EF5351DE61C50009576C4 /* DJCreateEventVC.swift in Sources */,
 				FE6EF5171DE619C9009576C4 /* DJPrimaryVC.swift in Sources */,
@@ -413,6 +424,7 @@
 				FE6EF5741DE632F0009576C4 /* Enums.swift in Sources */,
 				FE6EF57B1DE7B207009576C4 /* ToggleAVBControl.swift in Sources */,
 				FE6EF5551DE6247E009576C4 /* DJLoginVC.swift in Sources */,
+				FE74657D1DF1F38000415EF7 /* Dispatch+Convenience.swift in Sources */,
 				FEC9D3F51DEE8DF500DE97DC /* Protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
