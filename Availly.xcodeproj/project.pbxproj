@@ -41,6 +41,10 @@
 		FE74657D1DF1F38000415EF7 /* Dispatch+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE74657C1DF1F38000415EF7 /* Dispatch+Convenience.swift */; };
 		FE74657F1DF1F92A00415EF7 /* DJNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE74657E1DF1F92A00415EF7 /* DJNetworkManager.swift */; };
 		FE7465811DF20CA800415EF7 /* Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7465801DF20CA800415EF7 /* Convenience.swift */; };
+		FE7465831DF21E9B00415EF7 /* DJPrimaryVCDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7465821DF21E9B00415EF7 /* DJPrimaryVCDataSource.swift */; };
+		FE7465881DF2207100415EF7 /* UserHeadshotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7465861DF2207100415EF7 /* UserHeadshotCell.swift */; };
+		FE7465891DF2207100415EF7 /* UserHeadshotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE7465871DF2207100415EF7 /* UserHeadshotCell.xib */; };
+		FE74658C1DF2220C00415EF7 /* DJUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE74658B1DF2220C00415EF7 /* DJUser.swift */; };
 		FEC9D3F51DEE8DF500DE97DC /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC9D3F41DEE8DF500DE97DC /* Protocols.swift */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +87,10 @@
 		FE74657C1DF1F38000415EF7 /* Dispatch+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dispatch+Convenience.swift"; sourceTree = "<group>"; };
 		FE74657E1DF1F92A00415EF7 /* DJNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DJNetworkManager.swift; sourceTree = "<group>"; };
 		FE7465801DF20CA800415EF7 /* Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Convenience.swift; sourceTree = "<group>"; };
+		FE7465821DF21E9B00415EF7 /* DJPrimaryVCDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DJPrimaryVCDataSource.swift; sourceTree = "<group>"; };
+		FE7465861DF2207100415EF7 /* UserHeadshotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHeadshotCell.swift; sourceTree = "<group>"; };
+		FE7465871DF2207100415EF7 /* UserHeadshotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserHeadshotCell.xib; sourceTree = "<group>"; };
+		FE74658B1DF2220C00415EF7 /* DJUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DJUser.swift; sourceTree = "<group>"; };
 		FEC9D3F41DEE8DF500DE97DC /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -194,6 +202,7 @@
 		FE6EF5271DE619F5009576C4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FE7465851DF21FFA00415EF7 /* Cells */,
 				FE6EF57A1DE7B207009576C4 /* ToggleAVBControl.swift */,
 			);
 			name = Views;
@@ -205,6 +214,7 @@
 				FE6EF52B1DE61B2B009576C4 /* DJViewController.swift */,
 				FE6EF5511DE623F9009576C4 /* DJTabBarController.swift */,
 				FE6EF5581DE62622009576C4 /* DJNavigationController.swift */,
+				FE74658B1DF2220C00415EF7 /* DJUser.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -237,6 +247,7 @@
 				FE6EF5161DE619C9009576C4 /* DJPrimaryVC.swift */,
 				FE5CFDDE1DE9103700503915 /* DJPrimaryVC+Constraints.swift */,
 				FE6EF53D1DE61D7A009576C4 /* DJPrimaryVC.xib */,
+				FE7465821DF21E9B00415EF7 /* DJPrimaryVCDataSource.swift */,
 			);
 			name = Primary;
 			sourceTree = "<group>";
@@ -277,6 +288,23 @@
 				FE7465801DF20CA800415EF7 /* Convenience.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		FE7465851DF21FFA00415EF7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FE74658A1DF2207600415EF7 /* UserHeadshot */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		FE74658A1DF2207600415EF7 /* UserHeadshot */ = {
+			isa = PBXGroup;
+			children = (
+				FE7465861DF2207100415EF7 /* UserHeadshotCell.swift */,
+				FE7465871DF2207100415EF7 /* UserHeadshotCell.xib */,
+			);
+			name = UserHeadshot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +374,7 @@
 				FE6EF5301DE61B51009576C4 /* DJProfileVC.xib in Resources */,
 				FE6EF5361DE61C50009576C4 /* DJCreateEventVC.xib in Resources */,
 				FE6EF51C1DE619C9009576C4 /* Assets.xcassets in Resources */,
+				FE7465891DF2207100415EF7 /* UserHeadshotCell.xib in Resources */,
 				FE6EF53E1DE61D7A009576C4 /* DJPrimaryVC.xib in Resources */,
 				FE6EF53B1DE61C6B009576C4 /* DJSettingsVC.xib in Resources */,
 				FE6EF5561DE6247E009576C4 /* DJLoginVC.xib in Resources */,
@@ -413,8 +442,11 @@
 				FE6EF5521DE623F9009576C4 /* DJTabBarController.swift in Sources */,
 				FE6EF53A1DE61C6B009576C4 /* DJSettingsVC.swift in Sources */,
 				FE6EF52C1DE61B2B009576C4 /* DJViewController.swift in Sources */,
+				FE7465881DF2207100415EF7 /* UserHeadshotCell.swift in Sources */,
 				FE74657F1DF1F92A00415EF7 /* DJNetworkManager.swift in Sources */,
 				FE7465811DF20CA800415EF7 /* Convenience.swift in Sources */,
+				FE7465831DF21E9B00415EF7 /* DJPrimaryVCDataSource.swift in Sources */,
+				FE74658C1DF2220C00415EF7 /* DJUser.swift in Sources */,
 				FE6EF5771DE63303009576C4 /* UIColor+Convenience.swift in Sources */,
 				FE6EF5351DE61C50009576C4 /* DJCreateEventVC.swift in Sources */,
 				FE6EF5171DE619C9009576C4 /* DJPrimaryVC.swift in Sources */,

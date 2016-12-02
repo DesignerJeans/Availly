@@ -11,20 +11,23 @@ import UIKit
 class DJPrimaryVC: DJViewController {
 	// MARK: - outlets
 	@IBOutlet weak var toggleableContainerView: UIView!
-	@IBOutlet weak var AVBFriendsCollectionView: UICollectionView!
+	@IBOutlet weak var friendsCollectionView: UICollectionView!
+	@IBOutlet weak var optionsButtonZero: UIButton!
+	@IBOutlet weak var optionsButtonUser: UIButton!
+	@IBOutlet weak var avbSwitch: UISwitch!
 
+	@IBAction func clickedOptionsButton(_ sender: UIButton) {
+	}
+	
+	@IBAction func toggledAVBSwitch(_ sender: UISwitch) {
+	}
+	
+	
 	// MARK: - properties
+	let dataSource = DJPrimaryVCDataSource()
 	var containerViewBottomConstraint: NSLayoutConstraint?
 	var containerViewHeightConstraint: NSLayoutConstraint?
 	var collectionViewTopConstraint: NSLayoutConstraint?
-	
-	
-
-	
-//	func didReceiveNewAVB(withType type: AvaillyStatus) {
-//		print("main VC noticed the change!")
-//		setContainerViewPosition(toReflect: type)
-//	}
 	
 	// MARK: - custom methods
 	func setContainerViewPosition(toReflect availlybility: AvaillyStatus) {
@@ -57,14 +60,7 @@ class DJPrimaryVC: DJViewController {
 	}
 	
 	func toggleContainerViewPosition() {
-		
-		
-		
-		
-//		if let currentAVB = DJSessionManager.currentAvaillybility {
-//			let avbTypes: [AvaillyStatus] = [.availlyble, .unavaillyble].filter({$0 != currentAVB})
-//			setContainerViewPosition(toReflect: avbTypes.first!)
-//		}
+	
 	}
 
 	override func viewDidLayoutSubviews() {
@@ -79,10 +75,7 @@ class DJPrimaryVC: DJViewController {
 	
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
-		wait(for: 1) {
-			
-			NotificationCenter.default.post(Notification(name: DJNotification.AVBChanged.asNotificationName()))
-		}
+
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
@@ -92,7 +85,8 @@ class DJPrimaryVC: DJViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		AVBFriendsCollectionView.alpha = 0
+		dataSource.configureCollectionView(collectionView: friendsCollectionView)
+//		AVBFriendsCollectionView.alpha = 0
 		addContainerViewConstraints()
 		view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(toggleContainerViewPosition)))
 	}

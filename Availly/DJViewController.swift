@@ -11,11 +11,10 @@ import UIKit
 class DJViewController: UIViewController, ReactsToAVBChange {
 	
 	func didReceiveNewAVB(sender: Notification) {
-		print("vc received notification")
 		// go through list of ReactsToAVBChange objects
-		if let currentAVB = sender.object as? AvaillyStatus {
-			print(currentAVB.rawValue)
-		}
+//		if let currentAVB = sender.object as? AvaillyStatus {
+//			
+//		}
 	}
 	
 	required init?(coder aDecoder: NSCoder) {
