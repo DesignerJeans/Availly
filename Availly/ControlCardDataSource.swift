@@ -9,10 +9,10 @@
 import Foundation
 import UIKit
 
-class DJPrimaryVCDataSource: NSObject, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class DJPrimaryVCDataSource: NSObject, UITableViewDelegate, UITableViewDataSource {
 	var master: DJPrimaryVC?
 	var users = [DJUser]()
-	var collectionView: UICollectionView? { return master?.friendsCollectionView }
+	var tableView: UITableView?
 	
 	
 	// MARK: - UICollectionViewDataSource & Delegate methods
@@ -38,8 +38,9 @@ class DJPrimaryVCDataSource: NSObject, UICollectionViewDataSource, UICollectionV
 		return 0
 	}
 	
-	func configureCollectionView(collectionView: UICollectionView) {
-		collectionView.delegate = self
+	func configureTableView(tableView: UICollectionView) {
+		self.tableView = tableView
+		tableView.delegate = self
 		collectionView.dataSource = self
 		collectionView.register(UserHeadshotCell.self, forCellWithReuseIdentifier: "UserHeadshotCell")
 	}
